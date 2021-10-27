@@ -1,0 +1,24 @@
+.item {
+  background-color: #4d4d4d;
+  width: 150px;
+  height: 225px;
+  margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  -webkit-box-shadow: inset 0em 0em 1em 0px #00000063 ,0em 0em 1em 0px #0000008e;
+          box-shadow: inset 0em 0em 1em 0px #00000063 ,0em 0em 1em 0px #0000008e;
+  z-index: 1;
+  border-radius: 17x;
+}
+/*# sourceMappingURL=SwiperItem.css.map */

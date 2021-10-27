@@ -1,0 +1,64 @@
+.main{
+    position: unset;
+}
+.destaque-container{
+    width: 100%;
+    height: 530px;
+    position: absolute;
+    display: initial;
+    top: 0;
+    background-image: url(./destaque.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: unset;
+    z-index: -1;
+}
+
+.destaque-conteudo{
+    padding: 0 0 0 50px;
+    position: absolute;
+    top: 150px;
+    .destaqueTitle{
+        position: relative;
+        width: 500px;
+    }
+
+    .buttons-destaque{
+        font-weight: 500;
+        margin-top: 20px;
+        display: flex;
+        button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: rgb(216, 216, 216);
+            background-color: rgba(78, 78, 78, 0.5);
+            padding: 10px 16px 10px 10px;
+            margin-right: 10px;
+            border-radius: 2px;
+            cursor: pointer;
+            .icon{
+                color: rgb(255, 255, 255);
+                font-size: 24px;
+            }
+        }
+        button:hover{
+            background-color: rgba(22, 22, 22, 0.7);
+            transition-duration: .1s;
+        }
+    }
+    .description{
+        margin-top: 20px;
+        color: white;
+        width: 500px;
+    }
+}
+
+.swipers{
+    height: fit-content;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 550px;
+}

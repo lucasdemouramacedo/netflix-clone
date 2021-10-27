@@ -1,0 +1,112 @@
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#000000ad), to(#00000000));
+  background: linear-gradient(#000000, #000000ad, #00000000);
+  z-index: 1;
+  padding: 20px 50px 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .container-left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container-left .logo {
+  height: 30px;
+}
+
+.header .container-right {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.header .container-right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container-right .search {
+  background: rgba(0, 0, 0, 0);
+  padding-left: 5px;
+  height: 30px;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  width: 0px;
+  margin-right: -30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .container-right .icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.header .container-right form:hover .search {
+  border-bottom: 1px solid #fff;
+  width: 200px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .container-right .search:focus {
+  border-bottom: 1px solid #fff;
+  width: 200px;
+  display: block;
+}
+
+.header .container-right .profile-image {
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+.header .container-right .arrow {
+  padding: 0;
+  margin: 0;
+}
+
+.header .container-right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header .container-right div:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+/*# sourceMappingURL=Header.css.map */

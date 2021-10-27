@@ -1,0 +1,19 @@
+
+.item{
+    background-color: rgb(77, 77, 77);
+    width: 150px;
+    height:225px;
+    margin: 5px;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition-duration: .2s;
+    box-shadow:inset 0em 0em 1em 0px #00000063 ,0em 0em 1em 0px #0000008e;
+    z-index: 1;
+    border-radius: 17x;
+}
