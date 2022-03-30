@@ -1,19 +1,31 @@
 
 .item{
-    background-color: rgb(77, 77, 77);
     width: 150px;
-    height:225px;
-    margin: 5px;
+    height: 225px;
     align-items: center;
     position: relative;
     border-radius: 15px;
+    transform: scale(0.96);
     cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+    .image{
+        height: 100%;
+    }
+    .item-footer {
+        height: 60px;
+        width: 100%;
+        background: linear-gradient(rgba(14, 14, 14, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+        position: fixed;
+        bottom: -10px;
+    }
 }
 
-.item:hover{
+/*.item:hover{
     transform: scale(1.1);
     transition-duration: .2s;
     box-shadow:inset 0em 0em 1em 0px #00000063 ,0em 0em 1em 0px #0000008e;
     z-index: 1;
-    border-radius: 17x;
+    border-radius: 17px;
 }
+*

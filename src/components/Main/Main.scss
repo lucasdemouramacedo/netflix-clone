@@ -3,56 +3,65 @@
 }
 .destaque-container{
     width: 100%;
-    height: 530px;
+    height: 60vh;
     position: absolute;
-    display: initial;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     top: 0;
-    background-image: url(./destaque.jpg);
+    background-image: url("./destaque.jpg");
+    background-image: linear-gradient(to top, rgba(14, 14, 14, 1), rgba(14, 14, 14, 0.2), rgba(14, 14, 14, 0)),url("./destaque.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     background-attachment: unset;
     z-index: -1;
+    
 }
 
 .destaque-conteudo{
-    padding: 0 0 0 50px;
     position: absolute;
-    top: 150px;
+    top:37vh;
     .destaqueTitle{
         position: relative;
-        width: 500px;
+        width: 80vw;
     }
 
     .buttons-destaque{
-        font-weight: 500;
-        margin-top: 20px;
         display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
         button{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
-            color: rgb(216, 216, 216);
-            background-color: rgba(78, 78, 78, 0.5);
-            padding: 10px 16px 10px 10px;
-            margin-right: 10px;
-            border-radius: 2px;
+            background-color: rgba(0, 0, 0, 0);
+            margin: 5px;
             cursor: pointer;
+            font-size: 12px;
+            font-weight: 100;
+            color:#fff;
             .icon{
-                color: rgb(255, 255, 255);
-                font-size: 24px;
+                color: #fff;
+                font-size: 15px;
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 5px;
+                margin: 5px;
+                border-radius: 50%;
+                border: 1px solid #fff;
             }
         }
-        button:hover{
-            background-color: rgba(22, 22, 22, 0.7);
-            transition-duration: .1s;
+        button:nth-child(2){
+            .icon{
+                width: 50px;
+                color: #000;
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 10px;
+            }
         }
     }
-    .description{
-        margin-top: 20px;
-        color: white;
-        width: 500px;
-    }
+    
 }
 
 .swipers{
@@ -60,5 +69,5 @@
     overflow: hidden;
     position: absolute;
     width: 100%;
-    top: 550px;
+    top: 60vh;
 }

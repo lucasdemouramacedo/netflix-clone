@@ -4,11 +4,22 @@
 
 .destaque-container {
   width: 100%;
-  height: 530px;
+  height: 60vh;
   position: absolute;
-  display: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
-  background-image: url(./destaque.jpg);
+  background-image: url("./destaque.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0e0e0e), color-stop(rgba(14, 14, 14, 0.2)), to(rgba(14, 14, 14, 0))), url("./destaque.jpg");
+  background-image: linear-gradient(to top, #0e0e0e, rgba(14, 14, 14, 0.2), rgba(14, 14, 14, 0)), url("./destaque.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,58 +28,63 @@
 }
 
 .destaque-conteudo {
-  padding: 0 0 0 50px;
   position: absolute;
-  top: 150px;
+  top: 37vh;
 }
 
 .destaque-conteudo .destaqueTitle {
   position: relative;
-  width: 500px;
+  width: 80vw;
 }
 
 .destaque-conteudo .buttons-destaque {
-  font-weight: 500;
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .destaque-conteudo .buttons-destaque button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #d8d8d8;
-  background-color: rgba(78, 78, 78, 0.5);
-  padding: 10px 16px 10px 10px;
-  margin-right: 10px;
-  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 5px;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 100;
+  color: #fff;
 }
 
 .destaque-conteudo .buttons-destaque button .icon {
-  color: white;
-  font-size: 24px;
+  color: #fff;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px solid #fff;
 }
 
-.destaque-conteudo .buttons-destaque button:hover {
-  background-color: rgba(22, 22, 22, 0.7);
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-}
-
-.destaque-conteudo .description {
-  margin-top: 20px;
-  color: white;
-  width: 500px;
+.destaque-conteudo .buttons-destaque button:nth-child(2) .icon {
+  width: 50px;
+  color: #000;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .swipers {
@@ -78,6 +94,6 @@
   overflow: hidden;
   position: absolute;
   width: 100%;
-  top: 550px;
+  top: 60vh;
 }
 /*# sourceMappingURL=Main.css.map */
